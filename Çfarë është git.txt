@@ -1,0 +1,153 @@
+Çfarë është git?
+
+Git është një Sistem i Kontrollit të Versioneve i decentralizuar, i cili është Open Source dhe lejon zhvilluesit, dizajnerat etj të ruajnë dhe gjurmojnë çdo ndryshim të kodit, skedarëve etj në një mënyrë kronologjike dhe të mundëson të rikthehesh në faza të mëparshme. Ky sistem u mundëson përdoruesve të saj të punojnë në ekipe të mëdha, në projekte komplekse, në një mënyrë të organizuar dhe duke minimizuar konfliktet ndërmjet ndryshimeve të bëra nga përdorues të ndryshëm.
+Shkarko git
+
+Shkarkoni git nga faqja zyrtare.
+Komandat e Git ndonjëherë harrohen 😏 , por disa nga komandat më të përdorura janë: 🤘
+
+Tregoji Git-it kush je 😈! Konfiguro emrin dhe emailin e autorit që do të përdoret për commit-et tuaja.
+
+Për të konfiguruar emailin tuaj globalisht në git.
+
+ git config --global user.email "[YOUR EMAIL]"
+
+Për të konfiguruar emrin tuaj globalisht në git.
+
+ git config --global user.name "name" 
+
+Shënim: Nëse dëshironi që për një repository të caktuar të përdorni një emër/email tjetër nga ai global, atëherë shkoni në direktorinë ku doni dhe përdorni të njëjtën komandë por pa --global.
+
+Për inicializimin e një repository (depo-je).
+
+ git init 
+
+Për të shtuar skedarë te caktuar.
+
+git add [skedari.prapashtesa] 
+
+Shembull:
+
+git add App.js
+
+Për të shtuar te gjithe skedarët qe kane ndryshuar.
+
+git add .
+
+Për të bërë "commit" ose kryer ndryshimet me një mesazh/përshkrim te caktuar.
+
+git commit -m [Pershkrimi]
+
+Shembull:
+
+git commit -m "Shto App.js" 
+
+Për të parë statusin, cilët skedarë kanë ndryshuar, cilat janë shtuar dhe gati për commit.
+
+git status
+
+Për të parë historikun e commits/kryerjeve. Cdo commit/kryerje ka një numër unik , autorin etj.
+
+git log
+
+Për të vendosur url-në e vendodhjes së repository/depo-je remote (në server)
+
+git remote add origin [url-depos]
+
+Shembull:
+
+git remote add origin https://github.com/xh3n1/git-al.git
+
+Për të dërguar/aplikuar ndryshimet në repository-in/depon tonë remote.
+
+git push origin [emri-branchit]
+
+Shembull:
+
+git push origin master
+
+Për të marrë ndryshimet nga remote lokalisht.
+
+git pull
+
+Për të krijuar një branch të ri.
+
+git branch [emri-branchit]
+
+Shembull:
+
+git branch new-feature
+
+Liston të gjitha branch-et
+
+git branch
+
+Për të ndryshuar branch-in ku po punoni.
+
+git checkout [emri-branchit]
+
+Shembull:
+
+git checkout new-feature
+
+Për të krijuar një branch të ri si dhe të kaloni në këtë branch të sapo krijuar.
+
+git checkout -b [emri-branchit]
+
+Shembull:
+
+git checkout -b new-feature
+
+Per te bashkuar nje branch të caktuar me branch-in kryesor master.
+
+    Ne fillim kalojmë në branch-in kryesor master
+
+    git checkout master
+
+    Pastaj bashkojmë branch-in tonë me branch-in kryesor
+
+    git merge [emri-branchit]
+
+    Shembull:
+
+    git merge new-feature
+
+Fshin një branch të caktuar lokalisht.
+
+git branch -d [emri-branchit]
+
+Shembull:
+
+git branch -d new-feature
+
+Për të klonuar një repository/depo me protokollin https:
+
+git clone https://[url-depos]
+
+Shembull
+
+git clone https://github.com/xh3n1/git-al.git
+
+Për të klonuar një repository/depo me protokollin SSH
+
+git clone git@[url-depos]
+
+Shembull
+
+git clone git@github.com:xh3n1/git-al.git
+
+Ndryshon URL-në e një repository/depoje remote.
+
+git remote set-url origin [url-depos] 
+
+Shembull:
+
+git remote set-url origin https://github.com/xh3n1/git-al.git 
+
+Listo URL-të e një repository/depoje remote.
+
+git remote -v
+
+Për të fshirë commit-in e fundit
+
+ git reset --hard HEAD~1 

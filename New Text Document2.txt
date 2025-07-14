@@ -1,0 +1,88 @@
+🔧 KONFIGURIMI I PARË
+
+git config --global user.name "Emri Yt"
+git config --global user.email "email@shembull.com"
+
+🔹 Vendos emrin dhe emailin që do të shfaqen në çdo commit.
+📁 KRIJO NJË REPOZITOR LOKAL
+
+git init
+
+🔹 Krijon një repository Git në një dosje ekzistuese. Thjesht e bën dosjen “të kontrollueshme” me Git.
+🌍 KRIJO LIDHJEN ME GITHUB (apo një repo remote)
+
+git remote add origin https://github.com/Emri/Repo.git
+
+🔹 Lidh repo lokale me atë në GitHub (origin është emri default i lidhjes).
+📥 KLONO NJË REPO EKZISTUESE
+
+git clone https://github.com/Emri/Repo.git
+
+🔹 Shkarkon një projekt nga GitHub në kompjuterin tënd (bashkë me historikun e commit-eve).
+➕ SHTO FILE NË STAGING AREA
+
+git add emriFile.txt
+
+Ose për të gjitha:
+
+git add .
+
+🔹 Vendos skedarët që do të ruhen në commit-in tjetër.
+💾 KRIJO NJË COMMIT
+
+git commit -m "Mesazhi i commit-it"
+
+🔹 Ruhet një "gjendje" e kodit tënd me një koment që përshkruan ndryshimet.
+📜 SHIKO HISTORIKUN E COMMIT-EVE
+
+git log
+
+🔹 Tregon historikun me mesazhet, autorin, datën, hash-in e commit-eve.
+
+git log --oneline
+
+🔹 Tregon historikun në një rresht për çdo commit (më e pastër për pamje të shpejtë).
+🔄 DËRGO NDRYSHIMET NË GITHUB
+
+git push origin main
+
+🔹 Dërgon commit-et lokale në degën "main" të GitHub.
+📥 MERR NDRYSHIMET NGA REMOTE
+
+git pull origin main
+
+🔹 Merr ndryshimet më të fundit nga GitHub dhe i bashkon me ato lokale.
+🔁 KRIJO NJË DEGË (BRANCH)
+
+git branch emri-deges
+
+🔹 Krijon një degë të re ku mund të punosh veçmas.
+🔀 NDËRRO DEGËN
+
+git checkout emri-deges
+
+🔹 Kalon në degën që dëshiron të punosh.
+🔗 BASHKO NJË DEGË
+
+git merge emri-deges
+
+🔹 Bashkon ndryshimet nga një degë tjetër në degën aktive.
+🗑 FSHIJ NJË FILE
+
+git rm emrifile.txt
+
+🔹 Fshin një skedar nga projekti dhe e përgatit për commit.
+🔍 SHIKO STATUSIN E PROJEKTIT
+
+git status
+
+🔹 Tregon cilat file janë ndryshuar, cilat janë të gatshme për commit, etj.
+🚫 ANULO NDRYSHIME
+
+git restore emrifile.txt
+
+🔹 Kthen file-in në gjendjen e fundit nga commit-i (anulon ndryshimet lokale).
+
+git reset HEAD emrifile.txt
+
+🔹 Heq file-in nga staging area, por nuk anulon ndryshimet në vetë file-in.
