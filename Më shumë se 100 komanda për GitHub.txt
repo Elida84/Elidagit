@@ -1,6 +1,3 @@
-sejkuzozfhhxuturt
-tzer.8po+s7
-tzeze5.ü08ö´
-zye5.5889üßß44e6.
-i79anrzuip0
-itf4k
+GitHub (/ˈɡɪthʌb/) është një platformë zhvilluesish që lejon zhvilluesit të krijojnë, ruajnë, menaxhojnë dhe ndajnë kodin e tyre. Ai përdor Git, një kontroll versioni të shpërndarë të kontrollit të qasjes, gjurmimin e gabimeve, kërkesat e veçorive të softuerit, menaxhimin e detyrave, integrimin e vazhdueshëm dhe wiki për çdo projekt. [6] Me seli në Kaliforni, ajo ka qenë një degë e Microsoft që nga viti 2018.[7]
+
+Zakonisht përdoret për të pritur projekte të zhvillimit të softuerit me burim të hapur.[8] Që prej 25   2023, GitHub raportoi se kishte mbi 100 milionë zhvillues[9] dhe më shumë se 420 milion depo,[10] duke përfshirë të paktën 28 milion depo publike.[11] Është hosti më i madh i kodit burimor në botë Që prej qershorit 2023. Mbi pesë miliardë kontribute zhvilluesish u bënë në më shumë se 500 milionë projekte me burim të hapur në 2024
